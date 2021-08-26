@@ -1,0 +1,38 @@
+<p>show-results works!</p>
+<h2>Inventory:</h2>
+<br>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>&nbsp;
+            <th>Name</th>&nbsp;
+            <th>Kernels</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let inv of inventory">
+            <td>{{inv.id}}</td>&nbsp;
+            <td>{{inv.name}}</td>&nbsp;
+            <td>{{inv.kernels}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Requests:</h2>
+<br>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th> &nbsp;
+            <th>inventory Id</th>&nbsp;
+            <th>requested Kernels</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let inv of request">
+            <td>{{inv.id}}</td>&nbsp;
+            <td>{{inv.inventoryId}}</td>&nbsp;
+            <td>{{inv.requestedKernels}}</td>
+        </tr>
+    </tbody>
+</table> 
